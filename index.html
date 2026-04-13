@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nicolás — Desarrollo web, software e IA | Portafolio Chile</title>
+<meta name="description" content="Portafolio de Nicolás: desarrollo web, sitios para marcas y turismo, automatización con IA y apps móviles. Ingeniero en Informática. Interfaces claras, código mantenible.">
+<meta name="keywords" content="desarrollador web, software, Chile, React, portafolio, diseño web, aplicaciones móviles, IA">
+<meta property="og:title" content="Nicolás — Desarrollo web & software">
+<meta property="og:description" content="Sitios, productos digitales y apps con enfoque en experiencia de usuario y rendimiento.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Figtree:ital,wght@0,300..600;1,300..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="sky-layer"></div>
+    <div class="milky-way"></div>
+    <div class="stars-layer" id="starsContainer"></div>
+    <div class="moon" aria-hidden="true"></div>
+    <div class="mountains-back"></div>
+    <div class="mountains-mid">
+      <div class="mtn-smoke" style="width:200px;height:200px;top:10%;left:18%;--sf-dur:10s;--sf-del:0s"></div>
+      <div class="mtn-smoke" style="width:140px;height:140px;top:20%;left:48%;--sf-dur:7s;--sf-del:2s"></div>
+      <div class="mtn-smoke" style="width:100px;height:100px;top:15%;left:72%;--sf-dur:9s;--sf-del:4s"></div>
+    </div>
+    <div class="forest" id="forestLayer"></div>
+    <div id="firefliesContainer"></div>
+  </div>
+
+  <div class="hero-layout">
+  <div class="hero-content">
+    <h1 class="hero-name">Hola, soy<br><em>Nicolás.</em></h1>
+    <div class="hero-glass-panel">
+      <p class="hero-subtitle">Ingeniero en Informática</p>
+      <p class="hero-role">Desarrollo web y software con mirada de producto: interfaces memorables, arquitectura ordenada y detalle que se nota.</p>
+      <p class="hero-value">«Transformo ideas en experiencias digitales claras, rápidas y con personalidad propia.»</p>
+    </div>
+  </div>
+
+  <aside class="hero-persona" aria-label="Stack tecnológico y retrato">
+    <div class="persona-avatar-wrap">
+      <div class="persona-avatar-inner">
+        <img class="persona-img" src="images/avatar-memoji.png" alt="Retrato tipo Memoji de Nicolás" width="128" height="128" decoding="async" onerror="this.style.display='none';this.nextElementSibling.removeAttribute('hidden');">
+        <div class="persona-memoji-fallback" hidden aria-hidden="true">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img">
+            <defs><linearGradient id="fb" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#ffe8a8"/><stop offset="100%" stop-color="#ffc878"/></linearGradient></defs>
+            <circle cx="60" cy="60" r="56" fill="url(#fb)"/>
+            <ellipse cx="60" cy="72" rx="38" ry="28" fill="#f5b895" opacity="0.35"/>
+            <ellipse cx="44" cy="52" rx="7" ry="9" fill="#2a2438"/>
+            <ellipse cx="76" cy="52" rx="7" ry="9" fill="#2a2438"/>
+            <circle cx="46" cy="50" r="2.5" fill="#fff" opacity="0.9"/>
+            <circle cx="78" cy="50" r="2.5" fill="#fff" opacity="0.9"/>
+            <path d="M44 78 Q60 92 76 78" fill="none" stroke="#c45a4a" stroke-width="3" stroke-linecap="round"/>
+            <ellipse cx="60" cy="40" rx="22" ry="8" fill="#3d3555" opacity="0.25"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <p class="persona-stack-label">Stack habitual</p>
+    <div class="tech-chip-row">
+      <span class="tech-chip t-html">HTML5</span>
+      <span class="tech-chip t-css">CSS</span>
+      <span class="tech-chip t-js">JavaScript</span>
+      <span class="tech-chip t-react">React</span>
+      <span class="tech-chip t-supa">Supabase</span>
+      <span class="tech-chip t-git">Git</span>
+    </div>
+  </aside>
+  </div>
+
+  <!-- Organic forest transition mask -->
+  <svg class="hero-mask" viewBox="0 0 1440 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="
+      M0,220 L0,140 C10,120 15,130 20,110 C25,90 28,105 32,85
+      C36,65 38,80 42,60 C46,40 48,55 52,38 C56,22 58,35 62,18
+      C66,5 68,15 72,8 C76,2 78,12 82,6 C86,0 88,10 92,4
+      C96,0 100,8 104,2 C108,0 112,6 116,12 C120,18 122,8 126,4
+      C130,0 134,8 138,14 C142,20 144,10 148,16 C152,22 154,12 158,18
+      C162,24 164,14 168,20 C172,26 174,16 178,22 C182,28 186,18 190,24
+      C194,30 196,20 200,26 C204,32 206,22 210,28 C214,34 216,24 220,30
+      C224,36 228,26 232,32 C236,38 238,28 242,34 C246,40 250,30 254,36
+      C258,42 260,32 264,38 C268,44 272,34 276,40 C280,46 282,36 286,42
+      C290,48 294,38 298,44 C302,50 304,40 308,46 C312,52 316,42 320,48
+      C324,54 326,44 330,50 C334,56 338,46 342,52 C346,58 350,50 354,56
+      C358,62 360,52 364,58 C368,64 372,54 376,60 C380,66 384,56 388,62
+      C392,68 394,58 398,64 C402,70 406,60 410,66 C414,72 416,62 420,68
+      C424,74 428,64 432,70 C436,76 440,66 444,72 C448,78 452,70 456,76
+      C460,82 462,72 466,78 C470,84 474,74 478,80 C482,86 486,76 490,82
+      C494,88 496,78 500,84 C504,90 508,80 512,86 C516,92 520,84 524,90
+      C528,96 530,86 534,92 C538,98 542,88 546,94 C550,100 554,92 558,98
+      C562,104 564,94 568,100 C572,106 576,98 580,104 C584,110 586,100 590,106
+      C594,112 598,104 602,110 C606,116 608,106 612,112 C616,118 620,110 624,116
+      C628,122 630,114 634,120 C638,126 642,118 646,124 C650,130 652,122 656,128
+      C660,134 664,126 668,132 C672,138 676,130 680,136 C684,142 688,134 692,140
+      C696,146 700,140 704,146 C708,152 712,144 716,150 C720,156 724,150 728,156
+      C732,162 736,156 740,162 C744,168 748,162 752,168 C756,174 760,168 764,174
+      C768,180 772,174 776,180 C780,186 784,182 788,188 C792,194 796,190 800,196
+      C820,206 840,212 860,216 C900,220 940,220 980,220
+      C1020,220 1060,218 1100,220 C1140,220 1180,220 1220,220
+      C1300,220 1380,220 1440,220 Z
+    "/>
+  </svg>
+</section>
+
+<!-- ═══════════════ MAIN CONTENT ═══════════════ -->
+<main>
+
+  <!-- ─── WEB PROJECTS ─── -->
+  <section class="bento-section" aria-labelledby="heading-web">
+    <div class="section-header reveal">
+      <span class="section-num">01</span>
+      <h2 class="section-title" id="heading-web">Experiencias web</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <p class="projects-scroll-hint">
+      <span class="projects-scroll-hint__icon" aria-hidden="true"></span>
+      <span class="projects-scroll-hint__text">Hay más proyectos: <strong>desliza el carrusel hacia la derecha</strong> (o arrastra con el dedo).</span>
+    </p>
+    <div class="projects-scroll" role="region" aria-roledescription="carrusel" aria-label="Proyectos web, desplazamiento horizontal">
+    <div class="bento-grid">
+
+      <!-- Las Torcacitas — Featured -->
+      <article class="card card-featured reveal reveal-delay-1">
+        <div class="card-accent-shape" style="background:radial-gradient(circle, rgba(80,200,120,0.25), transparent)"></div>
+        <p class="card-category">Camping familiar</p>
+        <h3 class="card-title">Camping Las Torcacitas</h3>
+        <p class="card-desc">Página web para un camping familiar. Stack base con HTML, CSS y JavaScript. Estilo colorido, amigable y elegante.</p>
+        <div class="card-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Sitio web</span>
+        </div>
+        <a href="https://lastorcacitas.vercel.app/" target="_blank" class="btn-crystal">
+            Ver Proyecto
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M2 10L10 2M10 2H4M10 2V8"/>
+          </svg>
+        </a>
+      </article>
+
+      <!-- Luno  — Tall -->
+      <article class="card card-tall reveal reveal-delay-2">
+        <div class="card-accent-shape" style="background:radial-gradient(circle, rgba(80,140,255,0.25), transparent)"></div>
+        <p class="card-category">Local Luno · web / e-commerce</p>
+        <h3 class="card-title">LUNO</h3>
+        <p class="card-desc">Página web y e-commerce para el local Luno, con HTML, CSS y JavaScript; pensado para escalar luego hacia tecnologías más seguras si el negocio lo requiere. Estilo minimalista, elegante y sofisticado que generó fascinación en el cliente.</p>
+        <div class="card-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">E-commerce</span>
+        </div>
+        <a href="https://luno-murex.vercel.app/" target="_blank" class="btn-crystal">
+          Ver Proyecto
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M2 10L10 2M10 2H4M10 2V8"/>
+          </svg>
+        </a>
+      </article>
+
+      <!-- Argos Sigma -->
+      <article class="card card-medium reveal reveal-delay-1">
+        <div class="card-accent-shape" style="background:radial-gradient(circle, rgba(200,100,255,0.22), transparent)"></div>
+        <p class="card-category">Estudio jurídico</p>
+        <h3 class="card-title">Argos</h3>
+        <p class="card-desc">Sitio web para estudio jurídico y contacto directo. FAQ para responder más rápido a los clientes, con la información clara sobre lo que ofrece la firma.</p>
+        <div class="card-tags">
+          <span class="tag">FAQ</span>
+          <span class="tag">Contacto</span>
+          <span class="tag">HTML · CSS · JS</span>
+        </div>
+        <a href="https://argos-sigma.vercel.app/" target="_blank" class="btn-crystal">
+            Ver Proyecto          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M2 10L10 2M10 2H4M10 2V8"/>
+          </svg>
+        </a>
+      </article>
+
+      <!-- Tiendas Boseto -->
+      <article class="card card-medium reveal reveal-delay-2">
+        <div class="card-accent-shape" style="background:radial-gradient(circle, rgba(255,160,60,0.22), transparent)"></div>
+        <p class="card-category">Bocetos web · tres rubros</p>
+        <h3 class="card-title">Tiendas Boseto</h3>
+        <p class="card-desc">Desarrollo de bocetos para un cliente con tres necesidades: página para su distribuidora, farmacia y perfumería. Se entregó un boceto para cada tienda solicitada.</p>
+        <div class="card-tags">
+          <span class="tag">Boceto</span>
+          <span class="tag">Distribuidora</span>
+          <span class="tag">Farmacia</span>
+          <span class="tag">Perfumería</span>
+        </div>
+        <a href="https://tiendas-iota.vercel.app/" target="_blank" class="btn-crystal">
+            Ver Proyecto          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M2 10L10 2M10 2H4M10 2V8"/>
+          </svg>
+        </a>
+      </article>
+
+    </div>
+    </div>
+  </section>
+
+  <!-- mockups removed -->
+
+  <div class="divider"></div>
+
+  <!-- ─── SOFTWARE SECTION ─── -->
+  <section class="software-section" aria-labelledby="heading-software">
+    <div class="section-header reveal">
+      <span class="section-num">02</span>
+      <h2 class="section-title" id="heading-software">Software, IA y apps</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <p class="projects-scroll-hint">
+      <span class="projects-scroll-hint__icon" aria-hidden="true"></span>
+      <span class="projects-scroll-hint__text">Hay más proyectos: <strong>desliza el carrusel hacia la derecha</strong> (o arrastra con el dedo).</span>
+    </p>
+    <div class="projects-scroll" role="region" aria-roledescription="carrusel" aria-label="Software e IA, desplazamiento horizontal">
+    <div class="bento-grid">
+
+      <!-- Auto-Tube-AI — Wide -->
+      <article class="card card-medium-wide reveal reveal-delay-1">
+        <div class="card-accent-shape" style="background:radial-gradient(circle, rgba(255,60,60,0.22), transparent)"></div>
+        <p class="card-category">YouTube · IA</p>
+        <h3 class="card-title">Auto‑Tube‑AI</h3>
+        <p class="card-desc">Sitio web para automatizar la subida de videos a YouTube mediante IA: el usuario conecta su cuenta a la página, sube el video y el SEO se genera automáticamente, optimizando tiempos y la gestión de la información.</p>
+        <div class="card-tags">
+          <span class="tag">IA</span>
+          <span class="tag">YouTube</span>
+          <span class="tag">SEO automático</span>
+          <span class="tag">Cuenta vinculada</span>
+        </div>
+        <a href="https://auto-tube-ai.vercel.app/" target="_blank" class="btn-crystal">
+            Ver Proyecto          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M2 10L10 2M10 2H4M10 2V8"/>
+          </svg>
+        </a>
+      </article>
+
+      <!-- Georu — Wide -->
+      <article class="card card-medium-wide reveal reveal-delay-2">
+        <div class="card-accent-shape" style="background:radial-gradient(circle, rgba(62,207,142,0.22), transparent)"></div>
+        <p class="card-category">Web de presentación · app móvil</p>
+        <h3 class="card-title">Georu</h3>
+        <p class="card-desc">Web de presentación de una app móvil creada para facilitar la locomoción rural y consultar recorridos (por dónde viene el transporte, entre otras consultas). La app y la web fueron proyecto final de titulación.</p>
+        <div class="card-tags">
+          <span class="tag">App móvil</span>
+          <span class="tag">Locomoción rural</span>
+          <span class="tag">Proyecto de titulación</span>
+        </div>
+        <a href="https://georu.vercel.app/" target="_blank" class="btn-crystal">
+            Ver Proyecto          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M2 10L10 2M10 2H4M10 2V8"/>
+          </svg>
+        </a>
+      </article>
+
+    </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="contact-section reveal" aria-labelledby="heading-contact">
+    <div class="contact-glass">
+      <p class="contact-label">¿Conversamos?</p>
+      <h2 class="contact-heading" id="heading-contact">Tu próximo lanzamiento<br>empieza aquí</h2>
+      <p class="contact-sub">Acepto encargos freelance, alianzas con equipos y roles donde el diseño y el código vayan de la mano. Escríbeme con contexto, plazos y lo que quieres lograr: respondo con propuesta clara.</p>
+      <div class="contact-links">
+        <a href="mailto:nicolas@email.com" class="contact-item">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2">
+            <rect x="1" y="3" width="12" height="8" rx="1.5"/>
+            <path d="M1 4.5L7 8.5L13 4.5"/>
+          </svg>
+          nicolas@email.com
+        </a>
+        <a href="https://github.com/" target="_blank" class="contact-item">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          GitHub
+        </a>
+        <a href="https://linkedin.com/" target="_blank" class="contact-item">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.175-.431.574-.878 1.244-.878.877 0 1.228.662 1.228 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+          </svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Concepto, diseño y desarrollo por <strong style="color:var(--text-secondary);font-weight:500">Nicolás</strong> · 2026</p>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
