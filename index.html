@@ -17,8 +17,18 @@
 </head>
 <body>
 
+<!-- Scroll Indicator Dots -->
+<nav class="scroll-indicator" aria-label="Indicador de secciones">
+  <ul class="scroll-dots">
+    <li><a href="#hero" class="scroll-dot active" data-section="hero" aria-label="Inicio"></a></li>
+    <li><a href="#heading-web" class="scroll-dot" data-section="web" aria-label="Experiencias web"></a></li>
+    <li><a href="#heading-software" class="scroll-dot" data-section="software" aria-label="Software, IA y apps"></a></li>
+    <li><a href="#heading-contact" class="scroll-dot" data-section="contact" aria-label="Contacto"></a></li>
+  </ul>
+</nav>
+
 <!-- ═══════════════ HERO ═══════════════ -->
-<section class="hero" id="home">
+<section class="hero" id="hero">
   <div class="hero-bg">
     <div class="sky-layer"></div>
     <div class="milky-way"></div>
@@ -39,8 +49,8 @@
     <h1 class="hero-name">Hola, soy<br><em>Nicolás.</em></h1>
     <div class="hero-glass-panel">
       <p class="hero-subtitle">Ingeniero en Informática</p>
-      <p class="hero-role">Desarrollo web y software con mirada de producto: interfaces memorables, arquitectura ordenada y detalle que se nota.</p>
-      <p class="hero-value">«Transformo ideas en experiencias digitales claras, rápidas y con personalidad propia.»</p>
+      <p class="hero-role">Desarrollo web y software con mentalidad de producto. Creo experiencias donde la lógica ordenada del código y el diseño de la interfaz marcan la diferencia.</p>
+      <p class="hero-value">«La simplicidad es la máxima sofisticación.»<br>— Leonardo da Vinci</p>
     </div>
   </div>
 
@@ -115,29 +125,29 @@
   <!-- ─── WEB PROJECTS ─── -->
   <section class="bento-section" aria-labelledby="heading-web">
     <div class="section-header reveal">
-      <span class="section-num">01</span>
       <h2 class="section-title" id="heading-web">Experiencias web</h2>
-      <div class="section-line"></div>
     </div>
 
-    <p class="projects-scroll-hint">
-      <span class="projects-scroll-hint__icon" aria-hidden="true"></span>
-      <span class="projects-scroll-hint__text">Hay más proyectos: <strong>desliza el carrusel hacia la derecha</strong> (o arrastra con el dedo).</span>
-    </p>
     <div class="projects-scroll" role="region" aria-roledescription="carrusel" aria-label="Proyectos web, desplazamiento horizontal">
     <div class="bento-grid">
 
       <!-- Las Torcacitas — Featured -->
       <article class="card card-featured reveal reveal-delay-1">
-        <div class="card-accent-shape" style="background:radial-gradient(circle, rgba(80,200,120,0.25), transparent)"></div>
-        <p class="card-category">Camping familiar</p>
-        <h3 class="card-title">Camping Las Torcacitas</h3>
-        <p class="card-desc">Página web para un camping familiar. Stack base con HTML, CSS y JavaScript. Estilo colorido, amigable y elegante.</p>
-        <div class="card-tags">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">Sitio web</span>
+        <div class="card-mockup">
+          <img src="images/lastorcacitas.vercel.app_.webp" alt="Mockup Camping Las Torcacitas" loading="lazy" width="1200" height="700">
+          <div class="card-mockup-overlay"></div>
+        </div>
+        <div class="card-content">
+          <div class="card-accent-shape" style="background:radial-gradient(circle, rgba(80,200,120,0.25), transparent)"></div>
+          <p class="card-category">Camping familiar</p>
+          <h3 class="card-title">Camping Las Torcacitas</h3>
+          <p class="card-desc">Página web para un camping familiar. Stack base con HTML, CSS y JavaScript. Estilo colorido, amigable y elegante.</p>
+          <div class="card-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Sitio web</span>
+          </div>
         </div>
         <a href="https://lastorcacitas.vercel.app/" target="_blank" class="btn-crystal">
             Ver Proyecto
@@ -149,15 +159,21 @@
 
       <!-- Luno  — Tall -->
       <article class="card card-tall reveal reveal-delay-2">
-        <div class="card-accent-shape" style="background:radial-gradient(circle, rgba(80,140,255,0.25), transparent)"></div>
-        <p class="card-category">Local Luno · web / e-commerce</p>
-        <h3 class="card-title">LUNO</h3>
-        <p class="card-desc">Página web y e-commerce para el local Luno, con HTML, CSS y JavaScript; pensado para escalar luego hacia tecnologías más seguras si el negocio lo requiere. Estilo minimalista, elegante y sofisticado que generó fascinación en el cliente.</p>
-        <div class="card-tags">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">E-commerce</span>
+        <div class="card-mockup">
+          <img src="images/luno-murex.vercel.app_.webp" alt="Mockup LUNO" loading="lazy" width="1200" height="700">
+          <div class="card-mockup-overlay"></div>
+        </div>
+        <div class="card-content">
+          <div class="card-accent-shape" style="background:radial-gradient(circle, rgba(80,140,255,0.25), transparent)"></div>
+          <p class="card-category">Local Luno · web / e-commerce</p>
+          <h3 class="card-title">LUNO</h3>
+          <p class="card-desc">Página web y e-commerce para el local Luno, con HTML, CSS y JavaScript; pensado para escalar luego hacia tecnologías más seguras si el negocio lo requiere. Estilo minimalista, elegante y sofisticado que generó fascinación en el cliente.</p>
+          <div class="card-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">E-commerce</span>
+          </div>
         </div>
         <a href="https://luno-murex.vercel.app/" target="_blank" class="btn-crystal">
           Ver Proyecto
@@ -169,17 +185,24 @@
 
       <!-- Argos Sigma -->
       <article class="card card-medium reveal reveal-delay-1">
-        <div class="card-accent-shape" style="background:radial-gradient(circle, rgba(200,100,255,0.22), transparent)"></div>
-        <p class="card-category">Estudio jurídico</p>
-        <h3 class="card-title">Argos</h3>
-        <p class="card-desc">Sitio web para estudio jurídico y contacto directo. FAQ para responder más rápido a los clientes, con la información clara sobre lo que ofrece la firma.</p>
-        <div class="card-tags">
-          <span class="tag">FAQ</span>
-          <span class="tag">Contacto</span>
-          <span class="tag">HTML · CSS · JS</span>
+        <div class="card-mockup">
+          <img src="images/argos-sigma.vercel.app_.webp" alt="Mockup Argos" loading="lazy" width="1200" height="700">
+          <div class="card-mockup-overlay"></div>
+        </div>
+        <div class="card-content">
+          <div class="card-accent-shape" style="background:radial-gradient(circle, rgba(200,100,255,0.22), transparent)"></div>
+          <p class="card-category">Estudio jurídico</p>
+          <h3 class="card-title">Argos</h3>
+          <p class="card-desc">Sitio web para estudio jurídico y contacto directo. FAQ para responder más rápido a los clientes, con la información clara sobre lo que ofrece la firma.</p>
+          <div class="card-tags">
+            <span class="tag">FAQ</span>
+            <span class="tag">Contacto</span>
+            <span class="tag">HTML · CSS · JS</span>
+          </div>
         </div>
         <a href="https://argos-sigma.vercel.app/" target="_blank" class="btn-crystal">
-            Ver Proyecto          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
+            Ver Proyecto
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M2 10L10 2M10 2H4M10 2V8"/>
           </svg>
         </a>
@@ -187,18 +210,25 @@
 
       <!-- Tiendas Boseto -->
       <article class="card card-medium reveal reveal-delay-2">
-        <div class="card-accent-shape" style="background:radial-gradient(circle, rgba(255,160,60,0.22), transparent)"></div>
-        <p class="card-category">Bocetos web · tres rubros</p>
-        <h3 class="card-title">Tiendas Boseto</h3>
-        <p class="card-desc">Desarrollo de bocetos para un cliente con tres necesidades: página para su distribuidora, farmacia y perfumería. Se entregó un boceto para cada tienda solicitada.</p>
-        <div class="card-tags">
-          <span class="tag">Boceto</span>
-          <span class="tag">Distribuidora</span>
-          <span class="tag">Farmacia</span>
-          <span class="tag">Perfumería</span>
+        <div class="card-mockup">
+          <img src="images/tiendas-iota.vercel.app_.webp" alt="Mockup Tiendas Boseto" loading="lazy" width="1200" height="700">
+          <div class="card-mockup-overlay"></div>
+        </div>
+        <div class="card-content">
+          <div class="card-accent-shape" style="background:radial-gradient(circle, rgba(255,160,60,0.22), transparent)"></div>
+          <p class="card-category">Bocetos web · tres rubros</p>
+          <h3 class="card-title">Tiendas Boseto</h3>
+          <p class="card-desc">Desarrollo de bocetos para un cliente con tres necesidades: página para su distribuidora, farmacia y perfumería. Se entregó un boceto para cada tienda solicitada.</p>
+          <div class="card-tags">
+            <span class="tag">Boceto</span>
+            <span class="tag">Distribuidora</span>
+            <span class="tag">Farmacia</span>
+            <span class="tag">Perfumería</span>
+          </div>
         </div>
         <a href="https://tiendas-iota.vercel.app/" target="_blank" class="btn-crystal">
-            Ver Proyecto          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
+            Ver Proyecto
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M2 10L10 2M10 2H4M10 2V8"/>
           </svg>
         </a>
@@ -215,32 +245,33 @@
   <!-- ─── SOFTWARE SECTION ─── -->
   <section class="software-section" aria-labelledby="heading-software">
     <div class="section-header reveal">
-      <span class="section-num">02</span>
       <h2 class="section-title" id="heading-software">Software, IA y apps</h2>
-      <div class="section-line"></div>
     </div>
 
-    <p class="projects-scroll-hint">
-      <span class="projects-scroll-hint__icon" aria-hidden="true"></span>
-      <span class="projects-scroll-hint__text">Hay más proyectos: <strong>desliza el carrusel hacia la derecha</strong> (o arrastra con el dedo).</span>
-    </p>
     <div class="projects-scroll" role="region" aria-roledescription="carrusel" aria-label="Software e IA, desplazamiento horizontal">
     <div class="bento-grid">
 
       <!-- Auto-Tube-AI — Wide -->
       <article class="card card-medium-wide reveal reveal-delay-1">
-        <div class="card-accent-shape" style="background:radial-gradient(circle, rgba(255,60,60,0.22), transparent)"></div>
-        <p class="card-category">YouTube · IA</p>
-        <h3 class="card-title">Auto‑Tube‑AI</h3>
-        <p class="card-desc">Sitio web para automatizar la subida de videos a YouTube mediante IA: el usuario conecta su cuenta a la página, sube el video y el SEO se genera automáticamente, optimizando tiempos y la gestión de la información.</p>
-        <div class="card-tags">
-          <span class="tag">IA</span>
-          <span class="tag">YouTube</span>
-          <span class="tag">SEO automático</span>
-          <span class="tag">Cuenta vinculada</span>
+        <div class="card-mockup">
+          <img src="images/auto-tube-ai.vercel.app_.webp" alt="Mockup Auto-Tube-AI" loading="lazy" width="1200" height="700">
+          <div class="card-mockup-overlay"></div>
+        </div>
+        <div class="card-content">
+          <div class="card-accent-shape" style="background:radial-gradient(circle, rgba(255,60,60,0.22), transparent)"></div>
+          <p class="card-category">YouTube · IA</p>
+          <h3 class="card-title">Auto‑Tube‑AI</h3>
+          <p class="card-desc">Sitio web para automatizar la subida de videos a YouTube mediante IA: el usuario conecta su cuenta a la página, sube el video y el SEO se genera automáticamente, optimizando tiempos y la gestión de la información.</p>
+          <div class="card-tags">
+            <span class="tag">IA</span>
+            <span class="tag">YouTube</span>
+            <span class="tag">SEO automático</span>
+            <span class="tag">Cuenta vinculada</span>
+          </div>
         </div>
         <a href="https://auto-tube-ai.vercel.app/" target="_blank" class="btn-crystal">
-            Ver Proyecto          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
+            Ver Proyecto
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M2 10L10 2M10 2H4M10 2V8"/>
           </svg>
         </a>
@@ -248,17 +279,24 @@
 
       <!-- Georu — Wide -->
       <article class="card card-medium-wide reveal reveal-delay-2">
-        <div class="card-accent-shape" style="background:radial-gradient(circle, rgba(62,207,142,0.22), transparent)"></div>
-        <p class="card-category">Web de presentación · app móvil</p>
-        <h3 class="card-title">Georu</h3>
-        <p class="card-desc">Web de presentación de una app móvil creada para facilitar la locomoción rural y consultar recorridos (por dónde viene el transporte, entre otras consultas). La app y la web fueron proyecto final de titulación.</p>
-        <div class="card-tags">
-          <span class="tag">App móvil</span>
-          <span class="tag">Locomoción rural</span>
-          <span class="tag">Proyecto de titulación</span>
+        <div class="card-mockup">
+          <img src="images/georu.vercel.app_.webp" alt="Mockup Georu" loading="lazy" width="1200" height="700">
+          <div class="card-mockup-overlay"></div>
+        </div>
+        <div class="card-content">
+          <div class="card-accent-shape" style="background:radial-gradient(circle, rgba(62,207,142,0.22), transparent)"></div>
+          <p class="card-category">Web de presentación · app móvil</p>
+          <h3 class="card-title">Georu</h3>
+          <p class="card-desc">Web de presentación de una app móvil creada para facilitar la locomoción rural y consultar recorridos (por dónde viene el transporte, entre otras consultas). La app y la web fueron proyecto final de titulación.</p>
+          <div class="card-tags">
+            <span class="tag">App móvil</span>
+            <span class="tag">Locomoción rural</span>
+            <span class="tag">Proyecto de titulación</span>
+          </div>
         </div>
         <a href="https://georu.vercel.app/" target="_blank" class="btn-crystal">
-            Ver Proyecto          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
+            Ver Proyecto
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M2 10L10 2M10 2H4M10 2V8"/>
           </svg>
         </a>
@@ -271,29 +309,104 @@
   <!-- ─── CONTACT ─── -->
   <section class="contact-section reveal" aria-labelledby="heading-contact">
     <div class="contact-glass">
-      <p class="contact-label">¿Conversamos?</p>
-      <h2 class="contact-heading" id="heading-contact">Tu próximo lanzamiento<br>empieza aquí</h2>
-      <p class="contact-sub">Acepto encargos freelance, alianzas con equipos y roles donde el diseño y el código vayan de la mano. Escríbeme con contexto, plazos y lo que quieres lograr: respondo con propuesta clara.</p>
-      <div class="contact-links">
-        <a href="mailto:nicolas@email.com" class="contact-item">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2">
-            <rect x="1" y="3" width="12" height="8" rx="1.5"/>
-            <path d="M1 4.5L7 8.5L13 4.5"/>
-          </svg>
-          nicolas@email.com
-        </a>
-        <a href="https://github.com/" target="_blank" class="contact-item">
-          <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-          </svg>
-          GitHub
-        </a>
-        <a href="https://linkedin.com/" target="_blank" class="contact-item">
-          <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
-            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.175-.431.574-.878 1.244-.878.877 0 1.228.662 1.228 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-          </svg>
-          LinkedIn
-        </a>
+      <div class="contact-container">
+        <!-- Columna izquierda: Información de contacto -->
+        <div class="contact-left">
+          <h2 class="contact-heading" id="heading-contact">
+            Hablemos de tu<br>próximo proyecto
+          </h2>
+          <p class="contact-description">
+            Estoy disponible para nuevos proyectos que desafíen mi capacidad de crear soluciones digitales innovadoras. Si tienes una idea en mente, me encantaría escucharte.
+          </p>
+
+          <!-- Email block -->
+          <div class="contact-block">
+            <p class="contact-block-label">Escríbeme directamente</p>
+            <a href="mailto:amunozpincheira@gmail.com" class="contact-info-item">
+              <svg width="16" height="16" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2">
+                <rect x="1" y="3" width="12" height="8" rx="1.5"/>
+                <path d="M1 4.5L7 8.5L13 4.5"/>
+              </svg>
+              amunozpincheira@gmail.com
+            </a>
+          </div>
+
+          <!-- Phone block -->
+          <div class="contact-block">
+            <p class="contact-block-label">Llamada rápida</p>
+            <a href="tel:+56922465252" class="contact-info-item">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2">
+                <path d="M3.5 1h9a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-9a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z"/>
+                <path d="M6 13.5 L10 13.5"/>
+              </svg>
+              +56 9 2246 5252
+            </a>
+          </div>
+
+          <!-- Social links -->
+          <div class="contact-socials">
+            <a href="https://linkedin.com/in/capzinho1" target="_blank" class="contact-social-link" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20 0H4C1.8 0 0 1.8 0 4v16c0 2.2 1.8 4 4 4h16c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4zM7.5 20H4.5V9h3v11zm-1.5-13c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM20 20h-3v-5.5c0-1.4-.5-2.3-1.7-2.3-1 0-1.5.6-1.8 1.2-.1.2-.1.4-.1.7V20h-3V9h3v1.5c.5-.7 1.3-1.7 3.2-1.7 2.3 0 4 1.5 4 4.8V20z"/>
+              </svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/capzinho1" target="_blank" class="contact-social-link" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Columna derecha: Formulario -->
+        <div class="contact-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Nombre</label>
+              <input 
+                type="text" 
+                id="contact-name" 
+                name="name" 
+                class="form-input" 
+                placeholder="Tu nombre completo"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Correo electrónico</label>
+              <input 
+                type="email" 
+                id="contact-email" 
+                name="email" 
+                class="form-input" 
+                placeholder="tu@email.com"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Mensaje</label>
+              <textarea 
+                id="contact-message" 
+                name="message" 
+                class="form-textarea" 
+                placeholder="Cuéntame sobre tu proyecto..."
+                rows="6"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-crystal form-submit">
+              <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 8h10M8.5 3.5L13 8l-4.5 4.5"/>
+              </svg>
+              Enviar Mensaje
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
@@ -301,7 +414,7 @@
 </main>
 
 <footer>
-  <p>Concepto, diseño y desarrollo por <strong style="color:var(--text-secondary);font-weight:500">Nicolás</strong> · 2026</p>
+  <p>Pensado, diseñado y escrito por <a href="https://xn--nicolsdev-41a.cl/" target="_blank" class="footer-link">nicolásdev.cl</a></p>
 </footer>
 
 <script src="js/main.js" defer></script>
