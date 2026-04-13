@@ -1,0 +1,220 @@
+# =====================================================
+# ROBOTS.TXT - OPTIMIZADO AL MÁXIMO
+# Dominio: https://xn--nicolsdev-41a.cl
+# Última actualización: 2026
+# =====================================================
+
+# =====================================================
+# REGLA GLOBAL — TODOS LOS BOTS
+# =====================================================
+User-agent: *
+# Recursos esenciales para renderizado (Core Web Vitals)
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /images2/
+Allow: /fonts/
+Allow: /index.html
+
+# Bloquear rutas sensibles y administrativas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cache/
+Disallow: /temp/
+Disallow: /backup/
+Disallow: /.env
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Bloquear parámetros que generan URLs duplicadas
+Disallow: /*?utm_source=
+Disallow: /*?utm_medium=
+Disallow: /*?utm_campaign=
+Disallow: /*?utm_content=
+Disallow: /*?utm_term=
+Disallow: /*?ref=
+Disallow: /*?query=
+Disallow: /*?sort=
+Disallow: /*?filter=
+
+# IMPORTANTE: NO bloquear /*.xml$ ni /*.json$ globalmente
+# ya que interfiere con sitemaps y datos estructurados.
+# En su lugar, bloquea rutas específicas:
+Disallow: /wp-json/
+Disallow: /feed/
+
+Crawl-delay: 1
+
+# =====================================================
+# GOOGLEBOT — CONFIGURACIÓN ESPECÍFICA
+# (Google ignora Crawl-delay; se gestiona en Search Console)
+# =====================================================
+User-agent: Googlebot
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /images2/
+Allow: /fonts/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.webp$
+Allow: /*.svg$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.woff2$
+Allow: /*.woff$
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.env
+Disallow: /node_modules/
+Disallow: /*?utm_source=
+Disallow: /*?ref=
+
+# =====================================================
+# GOOGLEBOT-IMAGE — INDEXACIÓN DE IMÁGENES
+# =====================================================
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /images2/
+Allow: /*.webp$
+Allow: /*.svg$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+
+# =====================================================
+# BINGBOT
+# =====================================================
+User-agent: Bingbot
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /images2/
+Allow: /fonts/
+Disallow: /admin/
+Disallow: /.env
+Disallow: /node_modules/
+Crawl-delay: 2
+
+# =====================================================
+# BOTS DE REDES SOCIALES (OPEN GRAPH / PREVIEWS)
+# =====================================================
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+User-agent: Discordbot
+Allow: /
+
+User-agent: Telegrambot
+Allow: /
+
+User-agent: Pinterest
+Allow: /
+
+# =====================================================
+# BOTS DE SEO / AUDITORÍA — BLOQUEADOS
+# (Evitan scraping de tu contenido y estrategia)
+# =====================================================
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: AhrefsBot-Slim
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: SemrushBot-SA
+Disallow: /
+
+User-agent: SemrushBot-SHLA
+Disallow: /
+
+User-agent: SemrushBot-SWA
+Disallow: /
+
+User-agent: SemrushBot-CT
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: Serpstatbot
+Disallow: /
+
+User-agent: SEOkicks
+Disallow: /
+
+User-agent: RankActiveLinkBot
+Disallow: /
+
+# =====================================================
+# BOTS DE SCRAPERS / SPAM — BLOQUEADOS
+# =====================================================
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: Slurp
+Disallow: /
+
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+# =====================================================
+# SITEMAP
+# =====================================================
+Sitemap: https://xn--nicolsdev-41a.cl/sitemap.xml
